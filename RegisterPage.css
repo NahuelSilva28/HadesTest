@@ -1,0 +1,156 @@
+@keyframes slide-in-left {
+  0% {
+    transform: translateX(-200px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.register-page-child {
+  position: absolute;
+  top: 171px;
+  right: 98px;
+  border-radius: 96px;
+  background-color: var(--color-gray-600);
+  width: 1244px;
+  height: 684px;
+}
+.register-page-item {
+  position: absolute;
+  top: 170px;
+  left: 648px;
+  border-radius: 0 86px 107px 0;
+  width: 698px;
+  height: 684px;
+  object-fit: cover;
+}
+.register-page-inner {
+  position: absolute;
+  top: 171px;
+  left: 98px;
+  border-radius: 41px 0 0 145px;
+  background-color: var(--color-gray-400);
+  width: 546px;
+  height: 684px;
+}
+.register-page-child1 {
+  position: absolute;
+  top: 170px;
+  left: 98px;
+  border-radius: var(--br-21xl);
+  width: 550px;
+  height: 140px;
+}
+.create {
+  align-self: stretch;
+  position: relative;
+  font-size: var(--font-size-21xl);
+  font-family: var(--font-inter);
+  color: var(--color-darkslateblue-100);
+  text-align: center;
+  mix-blend-mode: hard-light;
+}
+.register2 {
+  cursor: pointer;
+  border: 0;
+  padding: 0 var(--padding-58xl);
+  background-color: transparent;
+  position: absolute;
+  top: 652px;
+  left: 180px;
+  border-radius: var(--br-21xl);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.9),
+    rgba(255, 255, 255, 0.27)
+  );
+  backdrop-filter: blur(4px);
+  width: 386px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  box-sizing: border-box;
+}
+.register-page-child2 {
+  position: absolute;
+  top: 753px;
+  left: 146px;
+  width: 450px;
+  height: 3px;
+}
+.email,
+.register3,
+.username {
+  position: absolute;
+  display: inline-block;
+}
+.register3 {
+  top: 199px;
+  left: 154px;
+  font-size: var(--font-size-45xl);
+  font-weight: 200;
+  text-align: center;
+  width: 434px;
+  height: 63px;
+  opacity: 0;
+}
+.register3.animate {
+  animation: 1s ease 0s 1 normal forwards slide-in-left;
+}
+.email,
+.username {
+  top: 343px;
+  left: 180px;
+  font-weight: 100;
+  width: 258px;
+  height: 27px;
+}
+.email {
+  top: 441px;
+}
+.register-page-child3,
+.register-page-child4,
+.register-page-child5 {
+  border: 0;
+  background-color: var(--color-darkslateblue-200);
+  position: absolute;
+  top: 566px;
+  left: 180px;
+  border-radius: var(--br-3xs);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  width: 386px;
+  height: 50px;
+}
+.register-page-child4,
+.register-page-child5 {
+  top: 375px;
+}
+.register-page-child5 {
+  top: 468px;
+}
+.password1 {
+  position: absolute;
+  top: 539px;
+  left: 180px;
+  font-weight: 100;
+  display: inline-block;
+  width: 258px;
+  height: 27px;
+}
+.register-page {
+  position: relative;
+  width: 100%;
+  height: 1024px;
+  overflow: hidden;
+  background-image: url(./public/login-page@3x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  text-align: left;
+  font-size: var(--font-size-base);
+  color: var(--color-white);
+  font-family: var(--font-inter);
+}

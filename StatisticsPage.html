@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./StatisticsPage.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;1,200&display=swap"
+    />
+  </head>
+  <body>
+    <div class="statistics-page">
+      <div class="statistics3">Statistics</div>
+      <div class="frame5">
+        <img class="home-page-icon3" alt="" src="./public/home-page1@2x.png" />
+
+        <div class="home5">Home</div>
+        <div class="hub1">
+          <div class="hub-child"></div>
+          <button class="statistics4">
+            <img
+              class="statistics-child"
+              alt=""
+              src="./public/rectangle-148.svg"
+            />
+
+            <img
+              class="combo-chart-icon2"
+              alt=""
+              src="./public/combo-chart@2x.png"
+            />
+
+            <div class="statistics5">Statistics</div>
+          </button>
+          <button class="products4" id="products">
+            <img class="basket-icon2" alt="" src="./public/basket@2x.png" />
+
+            <div class="products5">Products</div>
+          </button>
+          <button class="menu-vertical2"></button>
+          <button class="male-user2"></button>
+          <div class="samuel-evans2">Samuel Evans</div>
+          <button class="home6" id="home">
+            <img
+              class="home-page-icon4"
+              alt=""
+              src="./public/home-page1@2x.png"
+            />
+
+            <div class="home7">Home</div>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var products = document.getElementById("products");
+      if (products) {
+        products.addEventListener("click", function (e) {
+          window.location.href = "./PoductPage.html";
+        });
+      }
+      
+      var home = document.getElementById("home");
+      if (home) {
+        home.addEventListener("click", function (e) {
+          window.location.href = "./AdminHomePageVisual.html";
+        });
+      }
+      </script>
+  </body>
+</html>
