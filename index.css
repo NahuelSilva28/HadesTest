@@ -37,6 +37,42 @@
   background-repeat: no-repeat;
   background-position: top;
 }
+#vertical-menu {
+  display: none;
+  position: absolute;
+  background-color: #333; /* Color de fondo */
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  right: 999;
+  z-index: 999;
+}
+
+#vertical-menu a {
+  color: #fff; /* Color del texto */
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  transition: background-color 0.3s; /* Transición de color al pasar el mouse */
+}
+
+#vertical-menu a:hover {
+  background-color: #555; /* Color de fondo al pasar el mouse */
+}
+
+#menu-toggle {
+  cursor: pointer;
+  background-color: #333; /* Color del botón */
+  color: #fff; /* Color del icono */
+  padding: 10px;
+  border: none;
+}
+
+#menu-toggle:hover {
+  background-color: #555; /* Color del botón al pasar el mouse */
+}
+.hidden {
+  display: none;
+}
 .male-user {
   top: 31px;
   left: 12px;
