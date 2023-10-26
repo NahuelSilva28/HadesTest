@@ -17,7 +17,12 @@
         <div class="color-menu"></div>
         <div class="frame-child"></div>
       </div>
-      <button class="menu-vertical" muted></button>
+      <button class="menu-vertical" id="menu-toggle" muted></button>
+      <div id="vertical-menu" class="hidden">
+        <!-- Contenido del menú aquí -->
+        <a href="#">Editar Foto</a>
+        <a href="#">Cambiar Nombre</a>
+      </div>
       <button class="male-user"></button>
       <div class="samuel-evans">Samuel Evans</div>
       <button class="home">
@@ -192,6 +197,14 @@
           window.location.href = "./PoductPage.html";
         });
       }
+      document.getElementById("menu-toggle").addEventListener("click", function () {
+        var menu = document.getElementById("vertical-menu");
+        if (menu.style.display === "block") {
+          menu.style.display = "none";
+        } else {
+          menu.style.display = "block";
+        }
+      });
       </script>
   </body>
 </html>
