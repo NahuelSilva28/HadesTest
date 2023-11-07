@@ -61,15 +61,18 @@
       <div class="box-container">
         <div class="box">
           <p class="box-name">HI</p>
-          <button class="expand-button" onclick="expandBox(this)">Expand</button>
+          <button class="expand-button" onclick="toggleBox(this)">Expand</button>
+
         </div>
         <div class="box">
           <p class="box-name">Name :) 2</p>
-          <button class="expand-button" onclick="expandBox(this)">Expand</button>
+          <button class="expand-button" onclick="toggleBox(this)">Expand</button>
+
         </div>
         <div class="box">
           <p class="box-name">Name 3</p>
-          <button class="expand-button" onclick="expandBox(this)">Expand</button>
+          <button class="expand-button" onclick="toggleBox(this)">Expand</button>
+
         </div>
       </div>
     </div>
@@ -93,9 +96,19 @@
           window.location.href = "./index.html";
         });
       }
+      function toggleBox(button) {
+        var box = button.parentElement;
+        box.classList.toggle("expanded");
+      
+        // Cambiar el texto del botón
+        if (box.classList.contains("expanded")) {
+          button.textContent = ">> <<";
+        } else {
+          button.textContent = "Expand";
+        }
+      }
+      
     </script>
     <br>
- 
- 
   </body>
 </html>
