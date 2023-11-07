@@ -240,7 +240,17 @@
   border: none;
   padding: 8px 40px; /* Ajusta estos valores según el tamaño que desees */
   margin: 0 auto; /* Centra horizontalmente el botón */
+  transition: background-color 0.3s, transform 0.3s;
   
+}
+.expand-button:hover {
+  background-color: #10418f; /* Cambia el color al pasar el mouse sobre el botón */
+  transform: scale(1.05); /* Agranda ligeramente el botón al pasar el mouse sobre él */
+}
+
+.expand-button:active {
+  background-color: rgb(41, 180, 175); /* Cambia el color cuando se hace clic en el botón */
+  transform: scale(0.95); /* Reduce ligeramente el botón al hacer clic */
 }
 
 .box.expanded {
