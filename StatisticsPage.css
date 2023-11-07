@@ -211,3 +211,30 @@
   color: var(--color-black);
   font-family: var(--font-inter);
 }
+
+.box-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 60px 50px 50px 240px; /* Adjust the margin values as needed */
+}
+
+.box {
+  border: 1px solid #ccc;
+  padding: 50px;
+  width: 40%; /* Adjust the width as needed */
+  height: 200px; /* Adjust the height as needed */
+  transition: width 0.3s; /* Add a transition for smooth expansion */
+}
+
+.expand-button {
+  cursor: pointer;
+  background-color: #2f2f2f;
+  color: #fff;
+  border: none;
+  padding: 10px;
+}
+
+.box.expanded {
+  width: 60%; /* Expand to full width */
+  height: 400px; /* Adjust the expanded height as needed */
+}
