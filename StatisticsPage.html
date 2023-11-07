@@ -10,6 +10,19 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;1,200&display=swap"
     />
+    <style>
+      .box-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .box {
+        border: 1px solid #ccc;
+        padding: 10px;
+        margin: 10px;
+      }
+    </style>
   </head>
   <body>
     <div class="statistics-page">
@@ -54,22 +67,43 @@
           </button>
         </div>
       </div>
+
+      <!-- Add a container for the boxes -->
+      <div class="box-container">
+        <div class="box">
+          <p>Name 1</p>
+          <button class="expand-button" onclick="expandBox(this)">Expand</button>
+        </div>
+        <div class="box">
+          <p>Name 2</p>
+          <button class="expand-button" onclick="expandBox(this)">Expand</button>
+        </div>
+        <div class="box">
+          <p>Name 3</p>
+          <button class="expand-button" onclick="expandBox(this)">Expand</button>
+        </div>
+      </div>
     </div>
 
     <script>
+      function expandBox(button) {
+        var box = button.parentElement;
+        box.classList.toggle("expanded");
+      }
+ 
       var products = document.getElementById("products");
       if (products) {
         products.addEventListener("click", function (e) {
-          window.location.href = "./PoductPage.html";
+          window.location.href = "./ProductPage.html";
         });
       }
       
       var home = document.getElementById("home");
       if (home) {
         home.addEventListener("click", function (e) {
-          window.location.href = "./AdminHomePageVisual.html";
+          window.location.href = "./index.html";
         });
       }
-      </script>
+    </script>
   </body>
 </html>
