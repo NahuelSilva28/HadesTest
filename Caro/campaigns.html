@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hermes-Dashboard</title>
+    <link rel="stylesheet" href="campaigns.css">
+</head>
+<body>
+    <div class="sidebar">
+        <!-- User Profile -->
+        <div class="user-profile">
+            <img src="images/maleuser@2x.png" alt="User Profile">
+            <div class="username">Samuel Evans</div>
+        </div>
+        <!-- Navigation Links -->
+        <a href="#" class="nav-link" id="dashboard">Home</a>
+        <a href="#" class="nav-link active" id="campaignsBtn">Campaigns</a>
+        <a href="#" class="nav-link" id="statistics">Statistics</a>
+    </div>
+    <main>
+        <h1>Your Campaigns</h1>
+        <button id="addCampaignBtn" class="button-33" role="button">Add New Campaign</button>
+        <div id="campaignList" class="campaign-container">
+            <!-- Campaign boxes will be added here -->
+        </div>
+        <div id="campaignForm" class="box hidden">
+            <form id="campaignFormElement">
+                <label for="title">Title of Campaign:</label>
+                <input type="text" id="title" name="title" required>
+                
+                <label for="description">Description of Campaign:</label>
+                <textarea id="description" name="description" required></textarea>
+                
+                <label for="videoUrl">Video URL:</label>
+                <input type="url" id="videoUrl" name="videoUrl" required>
+                
+                <input type="submit" value="Submit Campaign">
+                <button type="button" onclick="hideForm()">Cancel</button>
+            </form>
+        </div>
+    </main>
+    <script src="campaigns.js"></script>
+</body>
+</html>
