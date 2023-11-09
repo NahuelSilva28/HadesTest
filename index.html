@@ -41,8 +41,7 @@
         <div class="statistics">Statistics</div>
       </button>
       <div class="good-morning-samuel-container">
-        <span>G</span>
-        <span class="ood-morning-samuel">ood morning, Samuel!</span>
+        <span class="ood-morning-samuel">Good morning, Samuel!</span>
       </div>
       <div class="line-parent">
         <div class="frame-item"></div>
@@ -198,6 +197,12 @@
           menu.style.display = "block";
         }
       });
+      var groupButton1 = document.getElementById("groupButton1");
+      if (groupButton1) {
+        groupButton1.addEventListener("click", function (e) {
+          window.location.href = "./ProductPage.html";
+        });
+      }
       </script>
   </body>
 </html>
